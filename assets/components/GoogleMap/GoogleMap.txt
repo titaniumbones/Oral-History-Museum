@@ -1,0 +1,53 @@
+<?php
+/*
+	Snippet Name: GoogleMap
+	Short Desc: Outputs one or multiple Google maps with on-the-fly geocoding of addresses, or for predefined map points.	
+
+	Created By: Mark Croxton (mcroxton@hallmark-design.co.uk)
+	- 1.1   Bug fixes
+	- 1.2   Modifed to allow lat/lng passing, added large control option and bubbletpl option
+	- 1.3   Rewrite - now outputs multiple maps with accurate geocoding
+	- 1.3.1 Tweaked address search behaviour to allow multiple geocoder passes
+	- 1.3.2 Fixed js bug - thanks Bruno
+
+	Last modified: 19/09/2008
+	Version: 1.3.2
+	Google Map API Version: 2.0
+	MODx version: 0.9.6.1+
+	
+	Notes: 
+	* When using placeholders with phmode=1 this snippet is NOT compatible with the PHx plugin
+
+	Example call:
+	[!GoogleMap? &key=`ABQIAAAA...` &maps=`mapid : map | address1 : Unit 3 Cygnet Park | address2 : Phorpress Way | city : Peterborough | state : Cambs | zip : PE7 8FQ | title : Tile Library | width : 400  | height : 400 | zoom : 9 || mapid : map2 | address1 : 5 Trafalgar Court | city : Brighton | state : East Sussex | zip : BN1 4FB | title : Hallmarkdesign | width : 600 | height : 300 | control : large | typecontrol : 1 | zoom : 12 | type : hybrid `!]
+
+	Params:
+	&key  = Google API Key (string - required) - see http://www.google.com/apis/maps/
+	$phmode  = output to placeholders? (recommended) (boolean) - 0 | 1
+	&maps = 'map1parameter1:map1value1|map1parameter2:map1value2 || map2parameter1:map2value1|map2parameter2:map2value2'
+		mapid = Map div css id (string)
+		title  = Map title - used in the pop-up bubble (string)
+		lng  = longitude (float)
+	 	lat   = latitude (float)
+		address1  = Street address 1
+		address2  = Street address 2
+		city  = Town or city
+		state  = State, county or province
+		zip  = UK or US postal code (string)
+		width  = Map width (integer)
+		height = Map height (integer)
+		zoom = Map zoom level (integer)
+		type = map type  (string) - normal (default) | satellite | hybrid
+		control = control size  (string) - small (default) | large
+		typecontrol = show type control? (boolean) - 0 | 1
+		bubbletpl =  name of chunk to use inside bubble (string)
+			- you can use these placeholders inside the chunk: [+maptitle+] and [+mapaddress+]
+		showbubble - show the bubble when the map is first loaded (boolean) - 0 | 1 (default)
+		
+	Placeholders:
+		If $phmode=1, a placeholder will be created for each mapid passed to the snippet. 
+		So if you have maps with mapid 'mymap1' and 'mymap2', a placeholder will be created for each:
+		[+mymap1+] and [+mymap2+]
+*/
+return include($modx->config['base_path'] . 'assets/snippets/GoogleMap/GoogleMap.inc.php');
+?>
