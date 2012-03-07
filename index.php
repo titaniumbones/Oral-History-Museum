@@ -71,3 +71,5 @@ $modx->initialize('web');
 if (!MODX_API_MODE) {
     $modx->handleRequest();
 }
+
+// adding a meaningless comment for git
