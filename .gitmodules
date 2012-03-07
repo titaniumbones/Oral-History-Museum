@@ -1,3 +1,3 @@
-[submodule "addets/butter"]
-	path = addets/butter
+[submodule "assets/butter"]
+	path = assets/butter
 	url = https://github.com/mozilla/butter.git
