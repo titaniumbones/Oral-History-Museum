@@ -40,3 +40,6 @@ setup/config.xml
 setup/config.new.xml
 setup/config.upgrade.xml
 setup/config.upgrade-advanced.xml
+
+# ignore cache 
+cache/
