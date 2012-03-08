@@ -207,7 +207,7 @@ if ($wf->_config[\'ph\']) {
     ),
     'files' => 
     array (
-      0 => 'C:/wamp/www/modx-2.2.0-pl2/core/components',
+      0 => 'c:/wamp/www/OHM/core/components',
     ),
   ),
 );

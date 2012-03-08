@@ -1,7 +1,7 @@
 document.addEventListener( "DOMContentLoaded", function( e ){
 
   Butter({
-    config: "../config/default.conf",
+    config: "/assets/butter/config/default.conf",
     ready: function( butter ){
       var media = butter.media[ 0 ];
 
@@ -13,9 +13,9 @@ document.addEventListener( "DOMContentLoaded", function( e ){
         media.addTrack( "Track" + Math.random() );
 
         butter.plugin.add([
-          { name: "footnote", type: "footnote", path: "../external/popcorn-js/plugins/footnote/popcorn.footnote.js" },
-          { name: "attribution", type: "attribution", path: "../external/popcorn-js/plugins/attribution/popcorn.attribution.js" },
-          { name: "image", type: "image", path: "../external/popcorn-js/plugins/image/popcorn.image.js" }], function( e ) {
+          { name: "footnote", type: "footnote", path: "/assets/butter/external/popcorn-js/plugins/footnote/popcorn.footnote.js" },
+          { name: "attribution", type: "attribution", path: "/assets/butter/external/popcorn-js/plugins/attribution/popcorn.attribution.js" },
+          { name: "image", type: "image", path: "/assets/butter/external/popcorn-js/plugins/image/popcorn.image.js" }], function( e ) {
 
           var event = track.addTrackEvent({
             type: "text",
