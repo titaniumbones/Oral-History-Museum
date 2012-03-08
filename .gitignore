@@ -12,8 +12,8 @@ config.core.php
 config.inc.php
 
 # ignore all compressed js and css
-*-min.css
-*-min.js
+# *-min.css
+# *-min.js
 
 # ignore concatenated js
 #modext.js
