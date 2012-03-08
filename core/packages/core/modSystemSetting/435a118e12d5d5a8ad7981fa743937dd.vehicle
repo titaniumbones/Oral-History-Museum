@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '82fc162132501b6c6e3a768471755ce3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '435a118e12d5d5a8ad7981fa743937dd',
+  'native_key' => 'debug',
+  'object' => '{"key":"debug","value":"","xtype":"textfield","namespace":"core","area":"system","editedon":null}',
+);

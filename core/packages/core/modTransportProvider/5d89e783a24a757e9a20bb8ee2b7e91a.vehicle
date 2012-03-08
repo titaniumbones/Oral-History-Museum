@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e0754a7184c497b167124ccc7fbeb005',
+  'package' => 'modx.transport',
+  'class' => 'modTransportProvider',
+  'signature' => '5d89e783a24a757e9a20bb8ee2b7e91a',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"modx.com","description":"The official MODX transport facility for 3rd party components.","service_url":"http:\\/\\/rest.modx.com\\/extras\\/","username":"","api_key":"","created":"2012-01-04 15:51:41","updated":null}',
+);

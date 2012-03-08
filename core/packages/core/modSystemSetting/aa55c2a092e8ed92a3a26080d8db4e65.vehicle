@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a970dfc469f0cb80ccee1491c1ebcc94',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'aa55c2a092e8ed92a3a26080d8db4e65',
+  'native_key' => 'phpthumb_imagemagick_path',
+  'object' => '{"key":"phpthumb_imagemagick_path","value":"","xtype":"textfield","namespace":"core","area":"phpthumb","editedon":null}',
+);
