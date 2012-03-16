@@ -1,7 +1,4 @@
 [submodule "assets/butter"]
 	path = assets/butter
-	url = https://github.com/mozilla/butter.git
+	url = https://github.com/titaniumbones/butter.git
 
-[submodule "addets/butter"]
-	path = addets/butter
-	url = https://github.com/mozilla/butter.git
